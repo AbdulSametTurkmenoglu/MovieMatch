@@ -5,7 +5,9 @@ A movie recommendation system that uses semantic search to find films based on p
 ## Features
 
 Semantic search for movies using plot embeddings.
+
 Integrates with MongoDB Atlas for vector search.
+
 Uses Hugging Face's all-MiniLM-L6-v2 model for generating embeddings.
 
 ## Prerequisites
@@ -34,8 +36,11 @@ poetry install
 ```
 
 Create a .env file in the project root and add your credentials:
+
 HF_TOKEN=your_hugging_face_token
+
 MONGO_URI=your_mongodb_connection_string
+
 Ensure the MongoDB collection has a vector search index named PlotSemanticSearch on the plot_embedding_hf field.
 
 ## Usage
